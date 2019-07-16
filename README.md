@@ -9,6 +9,7 @@ This work focuses on the application of PNN on deep reinforcement learning. Atar
 
 I used the A3C model in my case. The Asynchronous Advantage Actor-Critic method combines the benefits of both value-based and policy-based model. 
 
+I trained the A3C model with a CNN which has 2 convolutional layers and a fully connected layer. A fully conneced layer with linear output is the value output layer. Another fully connected layer with Softmax output is the policy output. The value is estimated to evaluate how good a certain state is and the policy is used to calculate the probability of actions.
 
 ----------------------------------------------
 How to use the code
