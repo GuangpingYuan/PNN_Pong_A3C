@@ -1,9 +1,15 @@
 # PNN_Pong_A3C
+
 An implementation of Progressive Neural Network on Pong game using A3C structure.
+
 Nowadays, applications of Machine Learning algorithms for multi-tasks are strongly limited by the strict data protection law and time-consuming data collection job. It is crucial to use the same data to solve as many similar tasks as possible. Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability is referred to as lifelong learning or often called continual learning. Although state-of-the-art deep neural networks (DNNs) show powerful abilities to solve many complex tasks, most of the structures still suffer from catastrophic forgetting. The pre-trained model will be totally overwritten when it trains on a new task. Continual learning aims to solve this problem. The Progressive Neural Networks algorithm is one of the continual learning methods and has all abilities that continual learning has: Agents can not only acquire experience from a sequence of tasks but also have the ability to improve convergence speed.
+
 Progressive Neural Network (PNN for short) starts from a single column: a normal deep convolutional neural network with L layers with an activation output h each. It is trained to solve the first task. Then, we add a second column with input 2 and it is supposed to deal with the second task. To speed up the convergence and transfer the knowledge from the first task, some lateral connections are utilized. The first layer is initialized randomly and the rest of the layers receives input from both columns via lateral connections. Each layer combines hidden activations of previous columns and a new column according to this formula. The third column is built the same way.
 This work focuses on the application of PNN on deep reinforcement learning. Atari Pong game is used as an example.
+
 I used the A3C model in my case. The Asynchronous Advantage Actor-Critic method combines the benefits of both value-based and policy-based model. 
+
+
 I trained the A3C model with a CNN which has 2 convolutional layers and a fully connected layer.A fully conneced layer with linear output is the value output layer. Another fully connected layer with Softmax output is the policy output. The value is estimated to evaluate how good a certain state is and the policy is used to calculate the probability of actions. 
 ----------------------------------------------
 How to use the code
