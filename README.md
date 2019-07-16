@@ -14,9 +14,9 @@ For training on the first task:
 
 2.Set the task number
 
-"Pong_PNN.py --column=0" for training on the first task on the Linux
+  "Pong_PNN.py --column=0" for training on the first task on the Linux
 
-change "parser.add_argument('--column', type=int, default=0)" in main function
+  change "parser.add_argument('--column', type=int, default=0)" in main function
 
 3.Set the name of environment
 
@@ -34,7 +34,7 @@ For training on the second task:
 
 1.Set the task number as 1
 
-For testing in show.py
+For testing in show.py:
 
 1.Set the ENV_NAME
 
