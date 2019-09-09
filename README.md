@@ -15,8 +15,9 @@ I trained the A3C model with a CNN which has 2 convolutional layers and a fully 
 How to use the code
 ----------------------------------------------
 For training on the first task: 
+Pong_PNN.py is the main function, run this file.
 
-1.Set the number of workers in run.py
+1.Set the number of workers in Pong_PNN.py
 
 2.Set the task number
 
