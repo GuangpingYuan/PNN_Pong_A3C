@@ -27,7 +27,7 @@ Pong_PNN.py is the main function, run this file.
 
 3.Set the name of environment
 
-4.Create the environment in A3C.py in class Worker()
+4.Create the environment in PNN.py in class Worker()
 
 5.Set GPU device
 
