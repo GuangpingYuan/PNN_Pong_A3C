@@ -14,38 +14,38 @@ I trained the A3C model with a CNN which has 2 convolutional layers and a fully 
 ----------------------------------------------
 How to use the code
 ----------------------------------------------
-For training on the first task: 
+### For training on the first task: 
 Pong_PNN.py is the main function, run this file.
 
-1.Set the number of workers in Pong_PNN.py
+1. Set the number of workers in Pong_PNN.py
 
-2.Set the task number
+2. Set the task number
 
-  "Pong_PNN.py --column=0" for training on the first task on the Linux
+    ```Pong_PNN.py --column=0``` for training on the first task on the Linux
 
-  change "parser.add_argument('--column', type=int, default=0)" in main function
+    ```change "parser.add_argument('--column', type=int, default=0)``` in main function
 
-3.Set the name of environment
+3. Set the name of environment
 
-4.Create the environment in PNN.py in class Worker()
+4. Create the environment in PNN.py in class Worker()
 
-5.Set GPU device
+5. Set GPU device
 
-6.Set num_workers to open multiple threads.
+6. Set num_workers to open multiple threads.
 
-7.The checkpoint files will be save in the path'checkpoint_pnn_adam/col0', weights and biases are saved in .npy files.
+7. The checkpoint files will be save in the path'checkpoint_pnn_adam/col0', weights and biases are saved in .npy files.
 
-8.If restore_from_save is set as 'True', the model will be trained from the last stop point.
+8. If restore_from_save is set as 'True', the model will be trained from the last stop point.
 
-For training on the second task:
+### For training on the second task:
 
-1.Set the task number as 1
+1. Set the task number as 1
 
-For testing in show.py:
+### For testing in show.py:
 
-1.Set the ENV_NAME
+1. Set the ENV_NAME
 
-2.Set the column_number
+2. Set the column_number
 
 package version:
 
